@@ -20,10 +20,10 @@ const CountBy = ({ data }) => {
         <div>
             <p>Contar por:</p>
             <ButtonGroup>
-                <ToggleButton type="radio" onClick={() => setNumber(1)} >Video</ToggleButton>
-                <ToggleButton type="radio" onClick={() => setNumber(2)} >Documentacion</ToggleButton>
-                <ToggleButton type="radio" onClick={() => setNumber(3)} >Enunciado</ToggleButton>
-                <ToggleButton type="radio" onClick={() => setNumber(4)} >Solucion</ToggleButton>
+                <ToggleButton size="sm" type="radio" onClick={() => setNumber(1)} >Video</ToggleButton>
+                <ToggleButton size="sm" type="radio" onClick={() => setNumber(2)} >Documentacion</ToggleButton>
+                <ToggleButton size="sm" type="radio" onClick={() => setNumber(3)} >Enunciado</ToggleButton>
+                <ToggleButton size="sm" type="radio" onClick={() => setNumber(4)} >Solucion</ToggleButton>
             </ButtonGroup>
             <p>Conteo: {count}</p>
         </div>

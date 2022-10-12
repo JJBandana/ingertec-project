@@ -5,4 +5,5 @@ VALUES ("2022-10-06", "TutorialsEU", 1),
         ("2022-10-06", "Fazt", 1),
         ("2022-10-06", "ASP.NET Core", 2),
         ("2022-10-06", "Prueba Técnica", 3),
-        ("2022-10-06", "Curriculum", 4);
+        ("2022-10-06", "Curriculum", 4),
+        ("2022-10-06", "MySQL Documentation", 2);

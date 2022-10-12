@@ -42,14 +42,15 @@ const ModalContainer = styled.div`
     align-items: center;
     min-width:10vw;
     max-width:90vw;
-    height:90vh;
+    max-height: 90vh;
     background:#222222;
     position:absolute;
     border-radius:5px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     padding: ${props => props.padding ? props.padding : "20px"};
     img{
-        height:100%;
+        max-height:100%;
+        max-width: 100%;
         border-radius:5px;
     }
 `
