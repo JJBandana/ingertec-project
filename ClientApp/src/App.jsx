@@ -88,8 +88,6 @@ const App = () => {
                                     <h4>Tabla "Resources"</h4>
                                 </Card.Header>
                             <Card.Body>
-                                    <Button size="sm" color="success" > Agregar </Button>
-                                    <hr></hr>
                                     <ResourceTable data={tre} />
                                 </Card.Body>
                             </Card>
