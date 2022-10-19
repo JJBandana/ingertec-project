@@ -17,6 +17,13 @@ namespace prueba_tecnica.Controllers
         }
 
         [HttpGet]
+        [Route("Ajax")]
+        public string MyAction()
+        {
+            return "{'pagina':'home', 'texto': 'este es el texto que debe aparecer en el textarea luego de hacer la llamada ajax'}";
+        }
+
+        [HttpGet]
         [Route("Lista")]
         public async Task<IActionResult> Lista()
         {

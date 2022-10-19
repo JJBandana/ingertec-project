@@ -49,9 +49,10 @@ const ModalContainer = styled.div`
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
     padding: ${props => props.padding ? props.padding : "20px"};
     img{
-        max-height:100%;
-        max-width: 100%;
+        object-fit:scale-down;
+        max-height: 50rem;
         border-radius:5px;
+        overflow:hidden;
     }
 `
 

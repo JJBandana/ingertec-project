@@ -12,6 +12,7 @@ import svgFile from './assets/layered-waves.svg'
 import Card from 'react-bootstrap/Card'
 import { Route, Link } from 'react-router-dom'
 import Picture from './Picture'
+import Ajax from './components/Ajax'
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
     const [modal2, setModal2] = useState(false);
     const [modal3, setModal3] = useState(false);
     const [modal4, setModal4] = useState(false);
+    const [ajax, setAjax] = useState("")
 
     const getData = async () => {
         try {
@@ -31,7 +33,8 @@ const App = () => {
                 }),
                 fetch('api/image/likes').then(res => res.json()).then(res => {
                     setLikesState(res)
-                })
+                }),
+                fetch('api/tresource/ajax').then(res => res.text()).then(res => setAjax(res)).catch(error => console.log(error))
             ])
         } catch (e) {
             console.log("ERROR =>", e)
@@ -79,6 +82,9 @@ const App = () => {
                     ))}
                 </Carrousel>
             </Wrapper>
+
+            <Ajax data={ajax} />
+
 
                 <Container padding-bottom="400px">
                     <Row className="mt-5">
